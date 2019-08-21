@@ -5,6 +5,11 @@ import android.view.View
 /**
  * Created by Administrator on 2019/8/20.
  */
+
+fun topLevelFunction() {
+
+}
+
 class Sample {
     var view: View? = null
 
@@ -22,5 +27,17 @@ class Sample {
 
         print(name)
     }
+
+
+    object B {
+        const val STATIC_STRING = "STATIC STRING"
+    }
+
+    companion object {
+        const val STATIC_STRING_2 = "STATIC STRING"
+
+        var num: Int = 2
+    }
+
 
 }
